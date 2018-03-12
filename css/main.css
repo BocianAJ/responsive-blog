@@ -1,0 +1,136 @@
+/*
+
+Your styles go here!
+
+Hint! You'll probably want to start by styling:
+  * <body>
+  * <article>
+  * <h1>
+  * <img>
+
+I've left some boilerplate below for you.
+
+*/
+
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+  padding-right:0.2em;
+  font-size:1.5em;
+}
+
+body {
+    max-width: 50em;
+    margin: 0 auto;
+    padding: 0 1em;
+    font-size: 16px;
+    line-height: 1.8em;
+    font-family: Arial, sans-serif;
+    font-weight: 300;
+}
+
+article {
+    margin-top: 4em;
+    margin-bottom:4em;
+}
+article:after {
+    content: "";
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 4em;
+    border-bottom: solid;
+    border-bottom-color: black;
+    border-bottom-width: 0.5em;
+    border-bottom-style: double;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+@media screen and (min-width:350px) {
+    article:after {
+        width: 40%;
+        min-width: 300px;
+    }
+}
+
+h1 {
+    font-size: 3em;
+    line-height: 1.2em;
+    text-align: center;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 2em;
+    line-height: 1.2em;
+    text-align: center;
+    font-weight: 300;
+}
+
+figure {
+    padding: 1em;
+    margin: 0;
+    border: solid 1px #000;
+    border-radius: 1em;
+    -webkit-box-shadow: 1px 1px 10px grey;
+    box-shadow: 1px 1px 10px grey;
+    background-color: #000;
+    color: #fff;
+}
+
+figcaption {
+    font-size: 1.1em;
+    font-weight: 300;
+    text-align: center;
+}
+
+figure img {
+    border-radius: 10px;
+    border: solid 1px #535353;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    padding: 1em 0;
+    display: block;
+    color: #333349;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-align: center;
+}
+a:hover, a:focus {
+    color:inherit;
+}
+
+.smiley-face {
+    font-size: 2.5em;
+    line-height: 1em;
+}
+
+ul.media {
+    list-style: none;
+    padding-left:0;
+    text-align:center;
+    border-bottom:solid;
+    border-bottom-color: grey;
+    border-bottom-width: 1px;
+}
+.media li {
+    display:inline-block;
+    padding-right:1.2em;
+}
+.media li:last-of-type {
+    padding-right:0;
+}
+.media a {
+    font-size:1em;
+}
+footer {
+    padding-bottom:1em;
+}
